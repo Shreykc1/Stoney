@@ -2,7 +2,13 @@ import { io } from 'socket.io-client';
 
 const SOCKET_URL = 'https://stoney.onrender.com';
 
-export const socket = io(SOCKET_URL);
+export const socket = io(SOCKET_URL, {
+    transports: ['websocket'],
+    secure: true,
+    rejectUnauthorized: false
+});
+
+
 
 export const connectSocket = () => {
     socket.on('connect', () => {
