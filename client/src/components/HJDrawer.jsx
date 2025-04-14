@@ -57,7 +57,7 @@ const HJDrawer = ({children, type}) => {
       <DrawerTrigger>{children}</DrawerTrigger>
       <DrawerContent className='h-auto min-h-[50vh] bg-black text-yellow-300 p-4 sm:p-6 lg:p-8'>
         <div className='container mx-auto max-w-md'>
-          <div className='text-center mb-8 animate-in slide-in-from-top duration-500'>
+          <div className='text-center mb-7 animate-in slide-in-from-top duration-500'>
             <h2 className='text-3xl sm:text-4xl font-spc mb-2'>{type} Game</h2>
             <p className='text-sm text-yellow-300/70'>Enter your credentials to {type.toLowerCase()} a game</p>
           </div>
